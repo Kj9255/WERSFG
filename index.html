@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Floor Plan</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/maplibre-gl@3.3.1/dist/maplibre-gl.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.4.2/mapbox-gl-draw.css"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="map"></div>
+  <div id="floor-selector">
+    <label for="floor-select" class="visually-hidden">Floor</label>
+    <select id="floor-select">
+      <option value="1">Floor 1</option>
+      <option value="2">Floor 2</option>
+      <option value="3">Floor 3</option>
+      <option value="4">Floor 4</option>
+    </select>
+  </div>
+  <div id="controls" class="button-container">
+    <button id="start-btn" class="control-btn rounded-l">Select Start</button>
+    <button id="end-btn" class="control-btn">Select End</button>
+    <button id="nav-btn" class="control-btn rounded-r">Navigate</button>
+  </div>
+  <div id="admin-controls" class="button-container">
+    <button id="admin-toggle" class="control-btn rounded-l">Admin Mode</button>
+    <button id="export-btn" class="control-btn rounded-r">Export GeoJSON</button>
+  </div>
+
+  <div id="demo-banner" class="demo-banner">
+    <span class="banner-text">
+      Demo Release: Indoor Map Viewer - Under Active Development
+    </span>
+    <a href="https://github.com/openindoormap/openindoormaps" target="_blank">
+      GitHub
+    </a>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@3.3.1/dist/maplibre-gl.js" defer></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.4.2/mapbox-gl-draw.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

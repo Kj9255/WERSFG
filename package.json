@@ -1,0 +1,12 @@
+{
+  "name": "floorplan-demo",
+  "version": "1.0.0",
+  "description": "Indoor navigation demo using MapLibre",
+  "scripts": {
+    "start": "http-server -c-1 -o",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
