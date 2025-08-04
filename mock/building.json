@@ -1,0 +1,31 @@
+{
+  "id": 1,
+  "name": "Ministerstwo Finansów",
+  "description": "Główny budynek Ministerstwa Finansów Rzeczypospolitej Polskiej w Warszawie",
+  "address": "ul. Świętokrzyska 12, 00-916 Warszawa, Poland",
+  "location": {
+    "latitude": 52.237573,
+    "longitude": 21.016006
+  },
+  "indoor_map": {
+    "type": "FeatureCollection",
+    "features": [
+      
+    ]
+  },
+  "indoor_routes": {
+    "type": "FeatureCollection",
+    "features": [
+      
+    ]
+  },
+  "pois": {
+    "type": "FeatureCollection",
+    "features": [
+      
+    ]
+  },
+  "levels": null,
+  "costum_metadata": null,
+  "owner_id": null
+}
