@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import maplibregl, { Map } from "maplibre-gl";
 import MapboxDraw from "@mapbox/mapbox-gl-draw";
+type MapboxDrawInstance = InstanceType<typeof MapboxDraw>;
 import type { FeatureCollection } from "geojson";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css";
@@ -27,7 +28,7 @@ function createEmptyFeatureCollection(): FeatureCollection {
 const EvacuationEditor = ({ floors, initialData = {} }: EvacuationEditorProps) => {
   const mapContainer = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<Map | null>(null);
-  const drawRef = useRef<MapboxDraw | null>(null);
+  const drawRef = useRef<MapboxDrawInstance | null>(null);
   const [currentFloor, setCurrentFloor] = useState(floors[0]);
   const [data, setData] = useState<Record<number, FloorState>>(() => {
     const obj: Record<number, FloorState> = {};

@@ -11,7 +11,8 @@
     "maplibre-gl": "^3.4.0"
   },
   "devDependencies": {
-    "http-server": "^14.1.1",
-    "@types/geojson": "^7946.0.8"
+    "@types/geojson": "^7946.0.8",
+    "@types/mapbox__mapbox-gl-draw": "^1.4.9",
+    "http-server": "^14.1.1"
   }
 }
